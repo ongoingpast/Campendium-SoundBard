@@ -4,6 +4,8 @@ A floating soundboard panel for FoundryVTT GMs. Bank your sound effects, assign 
 
 Built by [Campendium](https://campendium.io) — a digital toolkit for TTRPG GMs and worldbuilders.
 
+![SoundBard panel showing sound banks, a grid of labeled slots, volume and reverb sliders, and a Stop All button](assets/screenshot.png)
+
 ---
 
 ## What it does
