@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Stamp version and download URL into module.json
+        run: |
+          VERSION=${GITHUB_REF_NAME#v}
+          jq --arg v "$VERSION" \
+             --arg dl "https://github.com/ongoingpast/Campendium-SoundBard/releases/download/${GITHUB_REF_NAME}/soundbard.zip" \
+             '.version = $v | .download = $dl' \
+             dist/module.json > dist/module.json.tmp
+          mv dist/module.json.tmp dist/module.json
+
+      - name: Zip release artifacts
+        run: cd dist && zip -r ../soundbard.zip .
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            soundbard.zip
+            dist/module.json

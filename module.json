@@ -1,0 +1,26 @@
+{
+  "id": "soundbard",
+  "title": "SoundBard",
+  "description": "A StreamDeck-style floating soundboard panel for playing banked sound effects with hotkeys.",
+  "version": "1.0.0",
+  "url": "https://github.com/ongoingpast/Campendium-SoundBard",
+  "manifest": "https://github.com/ongoingpast/Campendium-SoundBard/releases/latest/download/module.json",
+  "download": "https://github.com/ongoingpast/Campendium-SoundBard/releases/download/v1.0.0/soundbard.zip",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "13"
+  },
+  "authors": [
+    { "name": "Campendium", "url": "https://github.com/ongoingpast" }
+  ],
+  "esmodules": ["soundbard.js"],
+  "styles": ["soundbard.css"],
+  "socket": true,
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ]
+}

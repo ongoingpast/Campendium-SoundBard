@@ -1,0 +1,9 @@
+export const MODULE_ID = "soundbard" as const;
+export const BANK_SETTING = "soundBank" as const;
+export const MASTER_VOLUME_SETTING = "masterVolume" as const;
+export const MASTER_REVERB_SETTING = "masterReverb" as const;
+export const ACTIVE_BANK_SETTING = "activeBank" as const;
+export const DEFAULT_COLUMNS = 4;
+export const DEFAULT_ROWS = 3;
+export const MAX_SLOTS = 64;
+export const NUM_BANKS = 20;
