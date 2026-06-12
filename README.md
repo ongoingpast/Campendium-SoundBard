@@ -10,7 +10,7 @@ Built by [Campendium](https://campendium.io) — a digital toolkit for TTRPG GMs
 
 ## What it does
 
-SoundBard gives you a draggable window of sound buttons that lives on top of your Foundry canvas. Load sounds into slots, label them, give them hotkeys, and play them with a single click or keypress. I've modeled this off of the types of soundboards radio DJs.
+SoundBard gives you a draggable window of sound buttons that lives on top of your Foundry canvas. Load sounds into slots, label them, give them hotkeys, and play them with a single click or keypress. I've modeled this off of the types of soundboards radio DJs use.
 
 - Up to **20 banks** of sounds, each with a configurable grid (up to 8×8)
 - **Hotkeys** per slot, assigned in Configure Controls — keys are shown directly on the button
